@@ -100,16 +100,34 @@ img {
 	color: var(--black-color);
 	position: relative;
 	text-transform: uppercase;
+	width: fit-content;
+	padding: 0px;
 }
 
 .main-nav .nav-item .nav-link::after {
-	top: 17px;
-	right: -8px;
-	background: var(--primary-color);
-	height: 7px;
-	width: 7px;
-	content: "";
+	top: 7px;
+    right: -15px;
+    background: var(--primary-color);
+    height: 7px;
+    width: 7px;
+    content: "";
+    position: absolute;
+}
+
+.main-nav .nav-item .nav-link::before{
 	position: absolute;
+	background: var(--primary-color);
+	height: 2px;
+	width: 0px;
+	content: "";
+	bottom: 1px;
+	left: 0px;
+	transition: .5s;
+}
+
+.main-nav .nav-item .nav-link:hover::before{
+	width: 100%;
+	transition: .5s;
 }
 
 .main-nav {
@@ -834,6 +852,14 @@ input:valid~label {
 
 	.social-icons {
 		justify-content: center;
+	}
+	.banner-img{
+		flex-direction: column-reverse;
+	}
+
+	.zatka-logo{
+		position: relative;
+		left: auto;
 	}
 }
 
