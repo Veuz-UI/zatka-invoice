@@ -120,7 +120,7 @@ img {
 	height: 2px;
 	width: 0px;
 	content: "";
-	bottom: 1px;
+	bottom: -4px;
 	left: 0px;
 	transition: .5s;
 }
